@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    text-align:center;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color:#333;
+    overflow-x:hidden;
+}
+
+header{
+    padding:80px 20px;
+    color:white;
+    
+}
+
+header h1{
+    font-size:55px;
+    animation: fadeIn 3s ease;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.message{
+    background:white;
+    margin:30px auto;
+    padding:30px;
+    width:80%;
+    border-radius:15px;
+    box-shadow:10px 5px 15px rgba(237, 7, 137, 0.712);
+}
+
+.message p{
+    padding: 10%;
+    font-family:cursive;
+    font-size: large;
+}
+.message h2{
+    color: rgb(225, 13, 123);
+    font-family:'Lucida Sans', Geneva, sans-serif 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+
+
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    color:white;
+    font-size:18px;
+}
+
+/* Floating hearts */
+
+.hearts::before{
+    content:"💖 💗 💕 💝 💓 💞";
+    font-size:30px;
+    position:fixed;
+    left:0;
+    width:100%;
+    animation: float 10s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(100vh);
+        opacity:1;
+    }
+
+    100%{
+        transform: translateY(-10vh);
+        opacity:0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
